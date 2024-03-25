@@ -1,0 +1,72 @@
+.slick-track
+  display: flex  
+
+.slick-list
+  overflow: hidden  
+
+.slick-dots 
+  display: flex  
+  justify-content: flex-start
+  align-items: flex-start
+  margin-left: 300px  
+.slick-active
+  &:active
+    background: red  
+
+.slick-dots li 
+  display: flex
+  justify-content: center
+  align-items: center  
+  background: #fafafa
+  width: 24px
+  height: 4px
+  list-style: none
+  border-radius: 2px
+  &:active
+    background: $c15
+
+
+
+
+.slick-dots button
+  // width: 10px
+  // height: 10px  
+  // background-color: yellow
+  // border-radius: 50%
+
+.slider-section
+  background: white
+  padding: 200px
+
+  &__prev
+    border: none
+    background-color: $c4
+    // font-size: 0
+    // background: url('../assets/images/img/Left.png')
+    // background-size: cover
+    // background-repeat: no-repeat
+
+
+  &__next
+    border: none
+    background-color: $c4  
+  &__wrapper 
+    position: relative
+    
+  &__prev,
+  &__next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%);
+
+  &__prev
+    left: 0
+
+  &__next
+    right: 0
+
+
+.slider
+  max-width: 700px
+  margin: 20px auto
+

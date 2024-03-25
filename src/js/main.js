@@ -51,7 +51,7 @@ $('.js-popup').on('click', function (event) {
 });
 
 // Mobile menu toggle
-$('.js-menu').on('click',function () {
+$('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
   $('.menu').toggleClass('is-opened');
 });
@@ -63,7 +63,7 @@ $('input[type="tel"]').inputmask({
 });
 
 // E-mail Ajax Send
-$('form').on('submit',function (e) {
+$('form').on('submit', function (e) {
   e.preventDefault();
 
   let form = $(this);
@@ -137,3 +137,13 @@ const mfpPopup = function (popupID, source) {
     // }
   });
 };
+$(document).ready(function () {
+  $('.slider').slick({
+    arrows: true,
+    dots: true,
+    adaptiveHight: true,
+    slidesToShow: 1,
+    prevArrow: $('.slider-section__prev'),
+    nextArrow: $('.slider-section__next'),
+  });
+});
