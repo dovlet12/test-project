@@ -8,14 +8,25 @@
     display: flex
     justify-content: space-around
     padding-top: 238px
+    +xxl
+      display:  flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      padding-top: 150px
 
   &__title
     max-width: 470px  
+    +xl
+      font-size: 60px
 
   &__subtitle
     color: $c5
     padding-top: 24px
     max-width: 445px
+    +xxl
+      font-size: 20px
+      max-width: 430px
 
   &__application-wrap
     border-radius: 16px
@@ -23,6 +34,10 @@
     max-width: 445px
     height: 268px
     padding: 40px
+    +xxl
+      margin-top: 20px
+    +xl
+      padding-top: 20px
 
   &__application-h5
     text-align: center  
@@ -41,6 +56,8 @@
     line-height: 24px
     letter-spacing: 0%
     text-align: center
+    +xl
+      padding: 13px 90px
 
   &__application-span
     display: flex

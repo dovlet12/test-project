@@ -1,36 +1,53 @@
 .header
-  padding-bottom: 26px
+  padding: 33px 0
+
+  &__block
+    display: flex
+    +xxl
+      display: flex
+      justify-content: center
+      align-items: center
+
+  &__logo-wrap
+    margin-right: 170px
+    +xxl
+      margin: 0
+    +lg
+      margin: 0
 
   &__logo
-    padding-top: 33px
+    color: $c0
     font-size: 28px
     font-weight: 700
     line-height: 32px
     letter-spacing: 0%
     text-align: left
 
-  &__logo-link
-    color: $c0  
-
-  &__block
+  &__list
     display: flex
+    column-gap: 24px
+    +xxl
+      display: none
+    +lg
+      display: none
 
-
-  &__menu-link
+  &__item a
+    color: $c2
     font-size: 18px
     font-weight: 500
     line-height: 24px
     letter-spacing: 0%
-    color: $c0
+    text-align: right  
 
-  &__nav
+  &__number-wrap
     display: flex
-    column-gap: 24px  
-    padding-top: 26px
-    padding-left: 120px
+    flex-direction: column
+    margin-left: 40px
+    margin-right: 32px
+    +md
+      display: none
 
-  
-  &__menu-sale
+  &__sales-service
     color: $c2
     font-size: 13px
     font-weight: 400
@@ -38,27 +55,13 @@
     letter-spacing: 0%
     text-align: right  
 
-  &__menu-number
+  &__number
     color: $c0
     font-size: 18px
     font-weight: 500
     line-height: 24px
     letter-spacing: 0%
+    text-align: right 
 
-  &__menu-btn
-    margin-left: 22px
-    margin-right: 20px
-    padding: 12px 24px
-    color: $c0
-    font-size: 15px
-    font-weight: 500
-    line-height: 20px
-    letter-spacing: 0%
-    text-align: center
-    border-radius: 7px
-
-  .header
-    +xxl
-    display: flex
-    +xl
-    
+  // &__btn
+  //   padding: 12px 24px  

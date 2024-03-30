@@ -6,12 +6,21 @@
     display: flex
     justify-content: center
     align-items: center
+    +xl
+      display: block
 
   &__form
     display: flex
     justify-content: center
     align-items: center
     column-gap: 10px
+    +xl
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      row-gap: 20px
+
 
   &__input
     maxw-idth: 228px
@@ -29,6 +38,9 @@
 
   &__btn-wrap
     padding-left: 16px  
+    +xl
+      margin-top: 10px
+      padding: 0
 
   &__btn
     padding: 20px 32px  
@@ -58,3 +70,6 @@
     line-height: 20px
     letter-spacing: 0%
     text-align: center
+    +xl
+      font-size: 13px
+      max-width: 100px
